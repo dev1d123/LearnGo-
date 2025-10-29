@@ -1,0 +1,9 @@
+fastapi==0.111.0
+uvicorn==0.29.0
+pydantic-settings==2.2.1
+pydantic>=2.7.0,<3.0.0
+pdfplumber
+python-docx
+
+langchain-core
+langchain-google-genai

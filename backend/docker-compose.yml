@@ -1,0 +1,13 @@
+services:
+  chrome-ai-backend:
+    build: .
+    container_name: chrome-ai-backend
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    restart: on-failure
+    volumes:
+      - ./app:/app
+    environment:
+      - PYTHONPATH=/app
