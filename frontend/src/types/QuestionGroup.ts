@@ -9,7 +9,7 @@ import type {
     JustificationQuestion 
   } from './QuestionTypes';
   
-  // 1️⃣ Tipo que agrupa todos los tipos de pregunta
+  // Types that agroup all question types
   export type Question =
     | MultipleChoiceQuestion
     | TrueFalseQuestion
@@ -17,12 +17,12 @@ import type {
     | ShortAnswerQuestion
     | RelationshipQuestion
     | JustificationQuestion;
-  
-  // 2️⃣ Tipo para un grupo de preguntas
+
+  // Types for a group of questions
   export type QuestionGroup = {
-    id: string;           // Identificador del grupo
-    title: string;        // Nombre del grupo o ejercicio
-    date: string;         // Fecha de creación o asignación
-    questions: Question[]; // Array de preguntas
+    id: string;           // Identifier 
+    title: string;        // Name of the group
+    date: string;         //  Creation or asignation date 
+    questions: Question[]; // Questions in the group
   };
   

@@ -1,12 +1,12 @@
 export interface SummaryRecord {
-    id: string;           // ID único
-    title: string;      // Título del resumen
-    date: string;         // Fecha ISO
+    id: string;           // identifier
+    title: string;      // Title
+    date: string;         // ISO date
     files: {
       name: string;
       type: string;
       size: number;
-    }[];                  // Archivos adjuntos
-    response: string;     // Resumen final editable
+    }[];                  // Files adjunted
+    response: string;     // Final edited response
 }
   
